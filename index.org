@@ -1,0 +1,28 @@
+* GIO
+
+** Who Am I
+
+Hello! 
+I am an Italian graduated Aerospace Engineer
+
+#+attr_html: :width 200px
+[[file:~/Dropbox/cv/DEF.jpg]]
+
+I am 24 
+
+
+* CFD - This is my Thesis
+
+My Master Thesis was a really important project in
+my life
+
+#+attr_html: :width 300px
+[[file:~/Dropbox/Tesi/REPORT/Images/background2.png]]
+
+
+
+* Settings :noexport:
+#+options: toc:1 
+#+setupfile: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+#+attr_html: width="100px"
+#+attr_org: :width 100

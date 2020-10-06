@@ -1,0 +1,7 @@
+* Gio's Website
+
+This is my first attempt to create a static
+website with org-mode.  I don't know how to do and
+I don't know if it is possible
+
+
