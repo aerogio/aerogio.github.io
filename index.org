@@ -1,6 +1,20 @@
-* GIO
+#+HUGO_BASE_DIR: .
 
-** Who Am I
+#+hugo_front_matter_format: yaml
+#+TITLE: GIOS WEBSITE
+
+
+#+begin_export html
+<nav>
+    <a class=" active" href="./index.html" title="">Home</a>
+    <a class="" href="./about.html" title="">About Me</a>
+</nav>
+#+end_export
+
+* GIO
+:PROPERTIES:
+:CUSTOM_ID: id1
+:END:
 
 Hello! 
 I am an Italian graduated Aerospace Engineer
@@ -8,7 +22,7 @@ I am an Italian graduated Aerospace Engineer
 #+attr_html: :width 200px
 [[file:./img/DEF.jpg]]
 
-I am 24 
+I am 24 years Old
 
 
 * CFD - This is my Thesis
@@ -21,11 +35,28 @@ Done For Scania AB and AFRY
 #+attr_html: :width 300px
 [[file:./img/background2.png]]
 
-Download the [[file:files/thesis.pdf][pdf-file]] of my thesis if you are interested.
+*Download the complete [[file:files/thesis.pdf][pdf-file]] of my thesis if you are interested.*
+
+* Contact Me
+
++ Email: 
++ Linkedin: 
++ CV: [[file:files/CV.pdf][pdf-file]]
 
 
 * Settings :noexport:
-#+options: toc:1 
-#+setupfile: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
+# #+BEGIN_export html
+# <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+# <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+# <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+# #+END_export
+
+
+#+options: toc:1 toc:nil 
+# #+setupfile: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 #+attr_html: width="100px"
 #+attr_org: :width 100
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
