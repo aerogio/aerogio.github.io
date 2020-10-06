@@ -6,7 +6,7 @@ Hello!
 I am an Italian graduated Aerospace Engineer
 
 #+attr_html: :width 200px
-[[file:img/DEF.jpg]]
+[[file:./img/DEF.jpg]]
 
 I am 24 
 
@@ -17,7 +17,7 @@ My Master Thesis was a really important project in
 my life
 
 #+attr_html: :width 300px
-[[file:i/img/background2.png]]
+[[file:./img/background2.png]]
 
 
 
