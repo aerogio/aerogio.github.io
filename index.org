@@ -14,11 +14,14 @@ I am 24
 * CFD - This is my Thesis
 
 My Master Thesis was a really important project in
-my life
+my life.
+
+Done For Scania AB and AFRY
 
 #+attr_html: :width 300px
 [[file:./img/background2.png]]
 
+Download the [[file:files/thesis.pdf][pdf-file]] of my thesis if you are interested.
 
 
 * Settings :noexport:
