@@ -1,15 +1,10 @@
 body {
-    background: linear-gradient(to bottom, rgb(20,20,20), rgb(60,60,60));
-    /* background-color: rgb(20,20,20); */
+    /* background: linear-gradient(to bottom, rgb(20,20,20), rgb(60,60,60)); */
+    background-color: rgb(18,58,49);
 } 
 
-.aboutme{
-    color: red
-}
 
 nav {
-    /* background: rgb(100,100,100); */
-    color: red
 }
 
 .nav-link {
@@ -17,7 +12,8 @@ nav {
 }
 
 h1 {
-    color: orange;
+    background-color: black;
+    color: rgb(18,58,49);
     font-size: 100px;
     margin-left: 20px;
 }
@@ -27,17 +23,27 @@ h2 {
     text-align: center;
     font-size: 50px;
 }
+h2:hover {
+    color: red;
+}
+
 p,a {
     color: white;
     font-size: 20px;
     text-align: justify;
     margin-left: 40px;
+    text-decoration: none;
 }
 
-#id1 {
-    color: green;
-    font-size: 20px;
+a:hover{
+    font-weight: bolder;
 }
+
+.active {
+    font-weight: 1000;
+}
+
+
 .section-number-2 {
     color: grey;
 }
@@ -45,6 +51,21 @@ p,a {
 li {
     color: red;
     margin-left: 100px;
+}
+
+.me {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 500px;
+    
+}
+
+.img1 {
+    margin-left: 900px;
+    margin-right: 100px;
+    
 }
 
 .submit-button {
