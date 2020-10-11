@@ -1,5 +1,10 @@
 *, html {
-    margin: 0;
+    margin: 0 0 0 0;
+}
+
+:root {
+    --rosa: rgb(255, 166, 221);
+    --verde: rgb(38,129,107);
 }
 
 body {
@@ -11,7 +16,7 @@ body {
     background-color: black;
     font-size: 3em;
     font-family: "tvlg mono", monospace;
-    margin 0;
+    margin: 0;
 }
 
 .container {
@@ -56,22 +61,36 @@ body {
 /* } */
 .description, .tcfd {
     
-    background-color: rgb(28,129,107);
+    background-color: var(--verde);
     padding: 2vw;
     max-width: 400px;
     flex: 0 1 300px;
     font-weigth: 800;
     font-size: 0.5em;
     margin: 2vw;
+    z-index: 1;
+    opacity: 0.9;
+    -webkit-animation: intro-block 500ms;
 }
+
+
+.tcfd {
+    max-width: 100%;
+    flex: 0 1 100vw;
+}
+
 
 #imgcfd {
     max-width: 100%;
+    transform: scale(2);
+    transition: transform 1s;
+    z-index: 2;
 }
 .pic2 {
     max-width: 700px;
     margin: 0;
 }
+
 .pic {
     
     max-width: 300px;
@@ -87,7 +106,7 @@ body {
     flex: 1 10 200px;
     letter-spacing: 0.15em;
     font-weight: 800;
-    color: rgb(28,129,107);
+    color: var(--verde);
 }
 
 
@@ -118,8 +137,7 @@ body {
 
 h1 {
     margin: 0;
-    background: rgb(28,129,107);
-    /* border:10vw solid red; */
+    background: var(--verde);
     padding: 10vw 1vw 5vw 5vw;
     padding: 10vw 10vw 1vw 5vw;
     color: black;
@@ -135,6 +153,8 @@ h2 {
     color: rgba(255,166,221,1);
     text-align: center;
     font-size: 100%;
+    /* animation-name: red-to-black; */
+    /* animation-duration: 5s; */
 }
 
 /* h2:hover { */
@@ -152,7 +172,8 @@ p {
 }
 
 #navbar {
-    color: rgb(255,166,221);
+    /* color: rgb(255,166,221); */
+    color: var(--rosa);
     font-size: 60%;
     text-decoration: none;
     text-align: center;
@@ -162,7 +183,7 @@ p {
 }
 
 .icon-item {
-    max-width: 100px;
+    max-width: 50px;
     padding: 2vw;
     margin: 1vw;
 }
@@ -171,37 +192,41 @@ p {
     Background-color: rgb(255,200,255);
 }
 
-.title-reach {
+.title-footer {
     color: black;
     flex-shrink: 0;
     flex-grow: 1;
-    font-size: 4vw;
+    font-size: 2vw;
+    text-decoration: none;
 }
 
-.icons {
+.footer {
     display: flex;
     align-items: center;
-    margin: 10vw;
-    Background-color: rgb(255,166,221);
+    margin: 10vw 0vw;
+    background-color: var(--rosa);
     justify-content: center;
 }
 
 #navbar:hover{
     /* font-weight: bolder; */
     background-color: rgb(20,20,20);
-
-    /* padding: 10px; */
+    padding: 0.3em 1.1em 0.3em 1.1em;
+    transition: all 0.5s;
 }
 
 #linkedin, #mail, #cvicon, #call {
     max-width: 100%;
 }
 
-#mail {
+#mail:hover {
+    transform: translate(50px, 30px);
+    transition: transform 1s ease;
 }
 
 a[class=active] {
     font-weight: 1000;
+    color: rgb(255,100,200);
 }
 
 #ActualLink {
@@ -211,7 +236,7 @@ a[class=active] {
 
 #ActualLink:link{
     margin: 0;
-    color: rgb(255,166,221);
+    color: var(rosa);
 }
 
 #ActualLink:visited {
@@ -226,7 +251,7 @@ img[src^="./img/"] {
 nav {
     margin: 0;
     padding: 1em 0 0.5em 0;
-    background: rgb(38,129,107);
+    background: var(--verde);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -256,13 +281,15 @@ nav {
     font-size: 20px;
     color: white;
     background: rgb(89, 150, 255);
-    transform: matrix(1, 0.45, 0.45, 1, 100, 50);
-    -webkit-transition: background, padding 500ms ease;
-    -moz-transition: background, padding 500ms ease;
-    -o-transition: background, padding 500ms ease;
 }
 
-@media (max-width: 600px) {
+.submit-button:hover {
+    background: red;
+    padding: 20px 30px;
+    transition: all 2s ease-in-out 1s;
+}
+
+@media (max-width: 650px) {
     .container3 {
 	flex-direction: column;
     }
@@ -273,12 +300,12 @@ nav {
     #navbar {
 	font-size: 50%;
     }
-    .icons {
+    .footer {
 	flex-wrap: wrap;
     }
-    .title-reach {
+    .title-footer {
 	font-size: 100%;
-	margin: 7vw;
+	margin: 0;
     }
     .icon-item {
 	max-width: 70px;
@@ -286,3 +313,16 @@ nav {
     }
 
 }
+
+
+@keyframes red-to-black {
+    0% {background: red; transform: translate(0px,0px);}
+    50% {background: yellow; transform: translate(10px,10px);}
+    100% {background: black; transform: translate(20px,20px);}
+}
+
+@keyframes intro-block {
+    0% {transform: translate(-7vw,0px); opacity: 0}
+    100% {transform: translate(0px,0px); opacity: 0.9}
+}
+
