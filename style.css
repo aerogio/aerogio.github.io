@@ -43,7 +43,6 @@ body {
     display: flex;
     Background-color: transparent;
     margin: 0vw 10vw 0 10vw;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     aling-content: ;
@@ -62,12 +61,14 @@ body {
 .description, .tcfd {
     
     background-color: var(--verde);
-    padding: 2vw;
+    padding: 4vw;
     max-width: 400px;
     flex: 0 1 300px;
     font-weigth: 800;
-    font-size: 0.5em;
-    margin: 2vw;
+    font-size: 0.4em;
+    /* text-align: justify; */
+    line-height: 25px;
+    margin: 1vw;
     z-index: 1;
     opacity: 0.9;
     -webkit-animation: intro-block 500ms;
@@ -86,6 +87,26 @@ body {
     transition: transform 1s;
     z-index: 2;
 }
+
+#imgbonsai {
+    max-width: 90%;
+    transform: scale(1.5);
+    transition: transform 1s;
+    z-index: 2;
+}
+
+#bonsai {
+    order: 1;
+}
+
+#pbonsai {
+    order: 2;
+}
+
+b {
+    color: var(--rosa);
+}
+
 .pic2 {
     max-width: 700px;
     margin: 0;
@@ -148,8 +169,12 @@ h1 {
     font-weight: 1000;
 }
 
+.Link {
+    text-decoration: none;
+}
+
 h2 {
-    margin: 3vw;
+    margin: 5vw 15vw 3vw 0;
     color: rgba(255,166,221,1);
     text-align: center;
     font-size: 100%;
@@ -162,13 +187,14 @@ h2 {
 /* } */
 
 p {
-    color: white;
-    font-size: 50%;
+    color: lightgrey ;
+    font-size: 35%;
+    line-height: 25px;
+    margin: 2vw 20vw 8vw 20vw;
+    text-align: center;
     /* text-align: justify; */
-    /* margin-left: 15vw; */
-    /* margin-right: 20vw; */
     text-decoration: none;
-    /* font-family: sans-serif; */
+
 }
 
 #navbar {
@@ -203,7 +229,7 @@ p {
 .footer {
     display: flex;
     align-items: center;
-    margin: 10vw 0vw;
+    margin: 10vw 0 0 0;
     background-color: var(--rosa);
     justify-content: center;
 }
